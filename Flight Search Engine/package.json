@@ -1,0 +1,19 @@
+{
+  "name": "flight_search_engine",
+  "version": "1.0.0",
+  "description": "search for flights",
+  "main": "index.html",
+  "scripts": {
+    "test": "jasminse test.js",
+	"start": "node Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"\""
+  },
+  "keywords": [
+    "\"\""
+  ],
+  "author": "Sureshkumar S",
+  "license": "ISC"
+}

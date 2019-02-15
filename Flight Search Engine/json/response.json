@@ -1,0 +1,78 @@
+var response = {
+	cities:[
+		'Chennai',
+		'Delhi',
+		'Pune',
+		'Banglore',
+		'Erode'
+	],
+	trips:[
+		{
+			"fno":"AI-291",
+			"depart":'09:00 AM',
+			"arrive":'12:00 PM',
+			"from":'chennai',
+			"sFrom":'CHE',
+			"sTo":'DEL',
+			"to":'Delhi',
+			"price":700,
+			"date":"2019-02-15"
+		},
+		{
+			"fno":"AI-292",
+			"depart":'10:00 AM',
+			"arrive":'02:00 PM',
+			"from":'chennai',
+			"sFrom":'CHE',
+			"sTo":'DEL',
+			"to":'Delhi',
+			"price":1600,
+			"date":"2019-02-15"
+		},
+		{
+			"fno":"AI-293",
+			"depart":'06:00 AM',
+			"arrive":'12:00 PM',
+			"from":'chennai',
+			"sFrom":'CHE',
+			"sTo":'DEL',
+			"to":'Delhi',
+			"price":600,
+			"date":"2019-02-15"
+		},
+		{
+			"fno":"AI-294",
+			"depart":'01:00 PM',
+			"arrive":'4 PM',
+			"from":'chennai',
+			"sFrom":'CHE',
+			"sTo":'DEL',
+			"to":'Delhi',
+			"price":400,
+			"date":"2019-02-15"
+		},
+		{
+			"fno":"AI-001",
+			"depart":'09:00 AM',
+			"arrive":'12:00 PM',
+			"from":'Delhi',
+			"sFrom":'DEL',
+			"sTo":'CHE',
+			"to":'chennai',
+			"price":200,
+			"date":"2019-02-16"
+		},
+		{
+			"fno":"AI-002",
+			"depart":'10:00 PM',
+			"arrive":'12:00 PM',
+			"from":'Delhi',
+			"sFrom":'DEL',
+			"sTo":'CHE',
+			"to":'chennai',
+			"price":500,
+			"date":"2019-02-16"
+		}
+	]
+
+}

@@ -1,0 +1,364 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Calibri, sans-serif;
+  background: linear-gradient(to top, #000000, 40%, #420d0d);
+}
+.header {
+  color: #ffffff;
+  float: left;
+  background-color: #383535;
+  height: 60px;
+  width: 100%;
+}
+.content {
+  width: 100%;
+}
+.clearBoth {
+  clear: both;
+  float: none;
+}
+.leftSection {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+  float: left;
+}
+.logo {
+  float: left;
+}
+.rightSection {
+  float: left;
+  width: 67%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.price {
+  font-size: 20px;
+  margin: 0px 8px;
+  font-weight: bold;
+}
+.search {
+  width: 300px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.noResultsImage {
+  padding: 20px 20px;
+  overflow: hidden;
+  text-align: center;
+  height: 200px;
+}
+#norecords {
+  margin-top: 40px;
+}
+.alignCenter {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+p {
+  display: inline;
+}
+.tickDetails {
+  width: 100%;
+}
+.oneWay {
+  float: left;
+  margin: 2px 10px 0px 0px;
+  padding: 5px;
+}
+.twoWay {
+  float: left;
+  margin: 2px 50px;
+  padding: 5px;
+}
+.bookButton {
+  float: right;
+  margin-right: 10px;
+}
+.repsonseRow {
+  min-height: 130px;
+  padding: 15px 10px;
+  border: 2px solid #e4e3e3;
+  border-radius: 5px;
+  margin: 15px 0px;
+  background: #ffffff;
+}
+.repsonseRow:hover {
+  background-color: #f3f3f3;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rightHead {
+  float: right;
+  padding-right: 20px;
+}
+.searchHeader {
+  padding: 25px 0px;
+  line-height: 20px;
+  border-bottom: 2px solid #a09e9e;
+  height: 25px;
+}
+.searchHeader .left {
+  display: inline-block;
+  float: left;
+  margin: 10px 0px;
+}
+.searchHeader .right {
+  float: right;
+  display: inline-block;
+  margin: 0px 5px;
+}
+.tojou:before {
+  content: ' \2192';
+}
+.ascSort:after {
+  content: "\2191";
+  color: #cccccc;
+}
+.decSort:after {
+  content: "\2193";
+  color: #cccccc;
+}
+.activeSort::after {
+  color: #000000;
+  font-weight: bold;
+}
+.sortTrips {
+  padding-left: 10px;
+  cursor: pointer;
+}
+.sorter {
+  padding: 5px 0px;
+}
+.HeadText {
+  width: 33%;
+  text-align: center;
+}
+.logoSymbol {
+  display: inline-block;
+}
+.flight {
+  font-size: 32px;
+  float: left;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin: 5px 5px;
+}
+.searchengine {
+  font-size: 14px;
+  float: left;
+  margin: 18px -92px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.searchTxt {
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.inputBox {
+  width: 205px;
+  height: 30px;
+  margin: 0px 5px;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0px 5px;
+  border: 1px solid grey;
+}
+.search .row {
+  width: 220px;
+  margin: 5px 0px;
+  text-align: center;
+}
+.searchButton {
+  width: 150px;
+  height: 30px;
+  margin: 0px 5px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #ff0000;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-style: none;
+  outline: none;
+}
+.buttonCls {
+  width: 95px;
+  height: 30px;
+  margin: 0px 5px;
+  background-color: #420d0d;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+}
+.left p {
+  font-weight: bold;
+  padding-right: 5px;
+  font-size: 20px;
+}
+.searchButton:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.oneWay ul li {
+  list-style: none;
+  padding: 3px 2px;
+}
+.oneWay ul {
+  width: 100%;
+  margin: 0px;
+}
+li.tripfrom {
+  font-weight: bold;
+}
+.twoWay ul li {
+  list-style: none;
+  padding: 3px 2px;
+}
+.twoWay ul {
+  width: 100%;
+  margin: 0px;
+}
+li.tripfrom {
+  font-weight: bold;
+}
+.searchHeader .depret li {
+  list-style: none;
+  padding: 0px 2px;
+}
+.searchHeader .depret {
+  width: 100%;
+  margin: 0px;
+}
+.bookButton button {
+  background: #ff0000;
+  border: 1px solid #ff0000;
+  height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  width: 100%;
+  margin: 10px 7px;
+  color: #ffffff;
+  cursor: pointer;
+}
+#returnDate {
+  margin-left: 22px;
+}
+#returnDate::before {
+  content: ": ";
+}
+.loading-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #000000;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 80px;
+  height: 80px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #ff0000;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #ff0000 transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.flatArrow::before {
+  content: ' \2192';
+}
+.bothArrow::before {
+  content: ' \2194';
+}
+@media screen and (max-width: 991px) {
+  .twoWay {
+    margin: 2px 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .leftSection {
+    width: 100%;
+  }
+  .rightSection {
+    width: 100%;
+  }
+  .HeadText {
+    width: 100%;
+  }
+  .search {
+    margin: 10px 0px;
+  }
+  #norecords {
+    margin: 0px;
+  }
+  .twoWay {
+    margin: 2px 0px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .oneWay {
+    clear: both;
+    float: none;
+  }
+  .twoWay {
+    clear: both;
+    float: none;
+  }
+  .bookButton {
+    clear: both;
+    float: none;
+  }
+  .bookButton button {
+    width: auto;
+    min-width: 145px;
+  }
+  .repsonseRow {
+    height: auto;
+  }
+  .twoWay {
+    border-top: 1px solid #ccc;
+  }
+}

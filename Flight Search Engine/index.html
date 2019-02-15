@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- ==================== For less comilation ================================== -->
+		<!--  <link rel="stylesheet/less" type="text/css" href="styles/style.less"> 
+		<script src="scripts/less.js" ></script>  -->
+		
+		<!-- ==================== application css file ================================== -->
+		 <link rel="stylesheet" type="text/css" href="styles/style.css">
+		
+		<!-- ==================== Polyfils for es6+ support ================================== -->
+		<script src="scripts/polyfills.js"></script>
+		
+		<!-- ==================== For sample data ================================== -->
+		<script src="json/response.json"></script>
+		
+		<!-- ==================== application script file ================================== -->
+		<script src="scripts/app.js"></script>
+		
+	</head>
+	<body onresize="dynamicHeight()">
+		<!-- application loader -->
+		<div id="loading">
+			<div class="loading-mask">
+				<img src="images/spinner-loader.gif" class="loader"/>
+			</div>
+		</div>	
+		
+		<header class="header">
+			<div class="HeadText">
+				<div class="logoSymbol">
+					<div class="logo">
+						<img src="images/flight.png">
+					</div>
+					<p class="flight">FLIGHT</p></br>
+					<p class="searchengine">search Engine</p>
+				</div>
+			</div>
+			<div></div>
+		</header>
+		
+		<section class="content">
+			<div class="leftSection">
+				<form id ="searchFlight">
+					<div class="search">
+						<div class="row">
+							<button class="buttonCls" id="oneWay" onclick="setTrip(1)" type="button">One Way</button>
+							<button class="buttonCls" id="twoWay" onclick="setTrip(2)" type="button">Return</button>
+						</div>
+						<div class="row">
+							<input class="inputBox" type="text" list="cities" placeholder="Enter Orgin" name="fromPlace" />
+							  <span class="tooltiptext"></span>
+						</div>
+						<div class="row">
+							<input class="inputBox" type="text" list="cities" placeholder="Enter Detination" name="toPlace"/>
+							<span class="tooltiptext"></span>
+						</div>
+						<div class="row">
+							<input type="date" class="inputBox" placeholder="Depature Date" name="fromDate"/>
+							<span class="tooltiptext"></span>
+						</div>
+						<div class="row" id="isTwoWay">
+							<input type="date" class="inputBox" placeholder="Depature Date" name="toDate"/>
+							<span class="tooltiptext"></span>
+						</div>
+						
+						<div class="row">
+							<select  class="inputBox"  name="count">
+							<option></option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option><option>6</option>
+							<option>7</option><option>8</option><option>9</option>
+							</select>
+							<span class="tooltiptext"></span>
+						</div>
+						<div class="row">
+							<button class="searchButton" onclick="search(event)" type="button">search</button>
+						</div>
+						<datalist id="cities">
+							<option value="Internet Explorer">
+						</datalist>
+					</div>
+				</form>
+			</div>
+			
+			<div class="rightSection">
+				<span id="rightHeader">
+					<div class="searchHeader">
+						<div class="left">
+							<p id="fromPlace"></p> <p id="arrow" class="tojou"></p> <p id="toPlace"></p>
+						</div>
+						<div class="right">
+							<ul class="depret">
+								<li>Departure  : <span id="departDate"></span></li>
+								<li>Return  <span id="returnDate"></span></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="sorter">
+						<p>Sort By: </p>
+						<span class="sortTrips" onclick="sortRecords('depart')">
+							<p>Departure</p>
+							<p class="ascSort" id="departasc"></p><p class="decSort" id="departdesc"></p>
+						</span>
+						<span class="sortTrips" onclick="sortRecords('price')">
+							<p  class="sortTrips">Price</p>
+							<p class="ascSort" id="priceasc"></p><p class="decSort" id="pricedesc"></p>
+						</span>
+					</div>
+				</span>
+				<div class='results' id="responseData"> </div>
+				
+				<div class='results' id="norecords">
+					<div class="alignCenter">
+						<img class="noResultsImage" src="images/noFlightResults.png">
+					</div>
+					<div class="alignCenter">
+						No flights found
+					</div>
+				</div>
+			</div>
+		</section>
+			
+	</body>
+</html>
